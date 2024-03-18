@@ -1,0 +1,482 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{% static 'images/Al_Zayed_faveicon-removebg-preview.png' %}">
+
+
+    <title>Al Zayed</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/main-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/about_maidup.css' %}">
+
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+  </head>
+  <style>
+
+
+  </style>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i> Info@alzayedrentals.com</li>
+            <li><i class="fa fa-map"></i> Alstom Arenco 3, UAE, Dubai</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/profile.php?id=61555658927706"><i class="fab fa-facebook"></i></a></li>
+            <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+            <li><a href="https://wa.me/+971585540051?text=Hello%2C%20how%20are%20you%3F"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/alzayedrentals?igsh=bjA1Z2U4NXg5Mjhy"><i class="fab fa-instagram"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="{% url 'home' %}" class="logo">
+                      <img src="{% static 'images/Al_Zayed_logo.png' %}" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="/">Home</a></li>
+                      <li><a href="{% url 'about' %}" class="active">About</a></li>
+                      <li><a href="{% url 'equipment' %}">Equipments</a></li>
+                      <li><a href="{% url 'service' %}">Services</a></li>
+                      <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="breadcrumb"><a href="#">Home</a>  /  About</span>
+          <h3>About</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT HERE -->
+
+  <div class="best-features about-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="right-image">
+            <img src="{% static 'images/about.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="left-content section-heading sp-margin">
+            <h2 class="text-dark">About Us</h2>
+            <div class="why-us-title-border"></div>
+            <p>
+              <span class="text-warning">Al Zayed</span> takes pride in being your one-stop solution for heavy and light machinery equipment rental. With a wide and diversified fleet,
+               we provide every type of construction equipment possible to meet the specific demands of your building projects. Our wide variety,
+                which includes heavy gear and specialist tools, guarantees that you have access to the proper equipment when you need it. Our varied rental terms, whether short or long term,
+                 provide you with the tools you need to succeed. Trust Al Zayed to be your dependable partner,
+                  supplying the necessary tools to build your vision with efficiency and precision.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CONTENT HERE -->
+
+  <!-- 2nd CONTENT HERE -->
+
+
+  <div class="container"> 
+    <div class="row mt-4 my-md-5 overflow-hidden">
+        <div class="col-12 col-md-4 mb-4 mb-md-0 wow fadeInDown" data-wow-delay=".3s">
+            <div class="border p-4">
+                <div class="row text-center text-lg-left">
+                    <div class="col-12 col-lg-3 mb-3 mb-md-0">
+                        <span class="fables-iconlamp-icon fables-second-text-color fa"><img src="{% static 'images/promise.png' %}" alt=""></span>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <h5 class="fables-second-text-color  semi-font my-2 mb-lg-3 about-block-heading text-center">Timely & Responsive Service</h5>
+                        <div class="font-15 fables-forth-text-color">
+                          <p>Our Timely and Responsive service to meet all your equipment needs. We deliver what we promised
+                            right on time and in the most hassle-free manner ro ensure your work goes on uninterrpted.
+                          </p> 
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0 wow fadeInDown" data-wow-delay=".6s">
+           <div class="border p-4">
+                <div class="row text-center text-lg-left">
+                    <div class="col-12 col-lg-3 mb-3 mb-md-0">
+                        <span class="fables-icongears-icon fables-second-text-color fa"><img src="{% static 'images/options.png'%}" alt=""></span>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                       <h5 class="fables-second-text-color semi-font my-2 mb-lg-3 about-block-heading text-center">Diverse Equipment Range</h5>
+                       <div class="font-15 fables-forth-text-color">
+                        <p>
+                          Discover a comprehensive selection of heavy and light construction equipment tailored to meet the specific needs of your project. Whether it's heavy machinery, earthmoving equipment.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0 wow fadeInDown" data-wow-delay=".9s">
+           <div class="border p-4">
+                <div class="row text-center text-lg-left">
+                    <div class="col-12 col-lg-3 mb-3 mb-md-0">
+                        <span class="fables-iconheadset-icon fables-second-text-color fa"><img src="{% static 'images/suport.png'%}" alt=""></span>
+                    </div>
+                    <div class="col-12 col-lg-9 ">
+                       <h5 class="fables-second-text-color  semi-font my-1 mb-lg-3 about-block-heading ">Efficient 24/7 support</h5>
+                        <div class="font-15 fables-forth-text-color">
+                          <p>
+                            We understand that construction projects often operate around the clock, and unexpected challenges can arise at any hour.
+                            That's why we take pride in offering efficient 24/7 support to ensure your peace of mind.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div> 
+   <div class="row overflow-hidden bg-secondary-subtle"> 
+        <div class="col-12 col-md-6">
+             <div class="image-container translate-effect-right">
+                <img src="{% static 'images/civil-engineer.jpg'%}" alt="Fables Template" class="img-fluid">
+             </div>
+        </div>
+        <div class="col-12 col-md-6 mt-1 section-heading sp-margin">
+            <!-- <span class="fables-iconrocket-icon fables-second-text-color "></span> -->
+            <h2 class="text-dark">Our Mission</h2>
+            <div class="fables-vision-detail fables-forth-text-color wow fadeInRight" data-wow-duration="1.5s">
+              <p>We are dedicated to providing unparalleled access to a diverse range of top-tier construction equipment, fostering innovation, and delivering exceptional service.
+                Our commitment extends beyond mere transactions; we aim to empower builders and contractors by offering reliable, high-quality tools that contribute to the efficiency, safety, and success of their projects.
+              </p>
+            </div>
+            <h2 class="text-dark mt-5" data-wow-duration="1.5s">Our Vision</h2>
+            <div class="fables-vision-detail fables-forth-text-color wow fadeInRight" data-wow-duration="1.5s">
+              <p>
+                Our vision at <span class="text-warning">Al Zayed</span> to be the industry leader, setting the standard for excellence in construction equipment rental. We envision a future where builders and contractors seamlessly access the tools they need, delivered with precision and supported by unparalleled service.
+                As we expand our footprint, we aspire to be a driving force in the evolution of the construction sector, embracing technological advancements and sustainability practices.
+              </p>
+            </div>
+        </div>
+  </div>
+    
+</div>
+
+  <!-- 2nd CONTENT HERE END-->
+  <!-- 3rd CONTENT HERE -->
+
+  <div class="happy-clients" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>BRANDS We Serve</h2>
+            <div class="why-us-title-border"></div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="owl-clients owl-carousel owl-courses-item sp-caro">
+            <div class="client-item border item">
+              <img src="{% static 'images/Heli_logo.jpg' %}" alt="1">
+            </div>
+
+            <div class="client-item border">
+              <img src="{% static 'images/mitsbushi.jpg' %}" alt="4">
+            </div>
+            
+            <div class="client-item border">
+              <img src="{% static 'images/JCB_logo.webp' %}" alt="2">
+            </div>
+
+            <div class="client-item border">
+              <img src="{% static 'images/zoomlion.png' %}" alt="6">
+            </div>
+            
+            <div class="client-item border">
+              <img src="{% static 'images/catlogo.jpg' %}" alt="3">
+            </div>
+            <div class="client-item border">
+              <img src="{% static 'images/Komatsu-logo-removebg-preview.png' %}" alt="5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- 3rd CONTENT HERE END -->
+  <!-- 4th CONTENT HERE START -->
+  <div class="container-fluid pt-5 bg-secondary-subtle">
+    <div class="container-xxl py-5">
+      <div class="container">
+          <div class="row g-5">
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                  <div class="d-flex flex-column">
+                      <img class="img-fluid rounded w-75 align-self-end" src="{% static 'images/zoomlion2.png' %}" alt="">
+                      <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="{% static 'images/Heli1.png' %}" alt="" style="margin-top: -25%;">
+                  </div>
+              </div>
+              <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                  <p class="d-inline-block border rounded-pill py-1 px-4">Featured</p>
+                  <h2 class="mb-4">Brands We Trust, Solutions You Need: Your Premier Source for Construction Equipment</h2>
+                  <p>At <span class="text-warning">Al Zayed</span>, we understand that every construction project demands the right equipment. That's why we offer a diverse fleet of machinery from industry-leading brands like Heli, Caterpillar, JCB, Zoomlion, and more."</p><br>
+                  <p class="mb-4">While we offer equipment from a range of established manufacturers, we especially recommend exploring the exceptional offerings from <span class="text-success">Zoomlion</span> and <span class="text-danger">Heli</span>. These brands are renowned for their cutting-edge technology, superior performance, and exceptional value like other brands. With features designed to maximize efficiency, minimize downtime, and enhance operator comfort, Zoomlion and Heli equipment can provide a significant edge on your construction site.</p>
+                  <a class="btn btn-outline-warning spbtn rounded-pill py-3 px-5 mt-3" href="{% url "service" %}">Explore</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- About End -->
+  <div class="container-fluid bg-secondary overflow-hidden my-5 px-lg-0">
+    <div class="container feature px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="p-lg-5 ps-lg-0">
+                    <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
+                    <h1 class="text-white mb-4">Why Choose Us</h1>
+                    <p class="text-white mb-4 pb-2">We offer a comprehensive selection of construction equipment rentals to empower your projects. Choose from leading brands like Caterpillar, JCB, Zoomlion, Mitsubishi, Heli, and many more, ensuring you have access to the industry's most reliable and innovative tools.</p>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                    <i class="fa fa-user-md text-dark"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-white mb-2">Experience</p>
+                                    <h5 class="text-white mb-0">Leading Brands, Unparalleled Quality</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                  <i class="fa fa-comment-medical text-dark"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-white mb-2">Support</p>
+                                    <h5 class="text-white mb-0">Customer-Centric Approach</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                    <i class="fa fa-check text-dark"></i>
+
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-white mb-2">Quality</p>
+                                    <h5 class="text-white mb-0">Innovative & Performance Advantage</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                    <i class="fa fa-headphones text-dark"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="text-white mb-2">Choice</p>
+                                    <h5 class="text-white mb-0"> Trusted Brands & Wide Selection</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'images/etachi.jpg' %}" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  </div>
+<!-- About End -->
+
+
+<!-- About Info Start -->
+<div class="container-fluid py-5">
+    <div class="container pb-3">
+        <div class="row">
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
+                    <i class="fa fa-3x fa-map-marker-alt text-primary-foot mr-3"></i>
+                    <div class="d-flex flex-column">
+                        <h5 class="text-uppercase">Our Office</h5>
+                        <p class="m-0 mt-2">Alstom Arenco 3, Building Number 3, Office Number 614, UAE, Dubai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
+                    <i class="fa fa-3x fa-envelope-open text-primary-foot mr-3"></i>
+                    <div class="d-flex flex-column">
+                        <h5 class="text-uppercase">Email Us</h5>
+                        <p class="m-0">Info@alzayedrentals.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+                <div class="d-flex align-items-center bg-light rounded mb-4 px-5" style="height: 150px;">
+                    <i class="fas fa-3x fa-phone-alt text-primary-foot mr-3"></i>
+                    <div class="d-flex flex-column">
+                        <h5 class="text-uppercase">Call Us</h5>
+                        <p class="m-0">+971 58 554 0051</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- 4th CONTENT HERE END -->
+
+  <!-- New Footer -->
+    <!-- New Footer -->
+      <!-- Footer Start -->
+        <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-contact">
+                          <h2>Get In Touch</h2>
+                          <p class="text-white"><i class="fa fa-map-marker-alt"></i>
+                            Alstom Arenco 3, Bulding number 3, Office number 614,<br>
+                            <span class="mt-2">                            
+                              Dubai Investment Park
+                              Dubai, UAE
+                            </span>
+                          </p>
+                          <p class="text-white"><i class="fa fa-phone-alt"></i>+971 55 580 1525,<br>&nbsp; &nbsp; &nbsp; +971 58 554 0051</p>
+                          <p class="text-white"><i class="fa fa-envelope"></i>Info@alzayedrentals.com</p>
+                          <div class="footer-social">
+                              <a class="btn" href="https://www.facebook.com/profile.php?id=61555658927706"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn" href="https://www.instagram.com/alzayedrentals?igsh=bjA1Z2U4NXg5Mjhy"><i class="fab fa-instagram"></i></a>
+                              <a class="btn" href="https://wa.me/+971585540051?text=Hello%2C%20how%20are%20you%3F"><i class="fab fa-whatsapp"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-link">
+                          <h2>Popular Links</h2>
+                          <a href="/">Home</a>
+                          <a href="{% url 'about' %}">About Us</a>
+                          <a href="{% url 'equipment' %}">Equipments</a>
+                          <a href="{% url 'service' %}">Our Services</a>
+                          <a href="{% url 'contactus' %}">Contact Us</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-link">
+                          <h2>Services</h2>
+                          <a href="{% url 'equipment' %}">Rental Equipments</a>
+                          <a href="{% url 'equipment' %}">Welding & Cutting Equipment</a>
+                          <a href="{% url 'equipment' %}">Heavy Deuty Mechinaries</a>
+                          <a href="{% url 'equipment' %}">Logistic Operation</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-newsletter">
+                          <h2>Connect Us</h2>
+                          <form>
+                              <input class="form-control" placeholder="Full Name">
+                              <input class="form-control" placeholder="Email">
+                              <button class="btn btn-custom">Submit</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="container copyright">
+            <p>&copy; 2024 <a href="#"> Al Zayed</a> All Right Reserved. Designed By <span>Rhizome Solutech</span></p>
+          </div>
+      </div>
+      <!-- Footer End -->
+  <!-- New Footer End-->
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/isotope.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/counter.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+  <script src="{% static 'js/custom-about.js' %}"></script>
+
+  <script src="{% static 'js/isotope-caro.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel-caro.js' %}"></script>
+  <script src="{% static 'js/custom-caro.js' %}"></script>
+
+  </body>
+</html>

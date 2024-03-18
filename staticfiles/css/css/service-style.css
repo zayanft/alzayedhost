@@ -1,0 +1,51 @@
+
+
+
+.service-work .service-work-vertical {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover * {
+  color: #000;
+  border-color: #000;
+  transition: .5s;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+  background: #ffff;
+  background: linear-gradient(0deg, #ffecbd 0%, rgba(255,255,255,0) 33.333%, #ffe08b 66.666%, rgba(255,255,255,0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+.equel-size img{
+  aspect-ratio: 3/2 !important;
+
+}
+.feature-work{
+  font-size: 20px;
+
+}

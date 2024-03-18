@@ -1,0 +1,252 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/Al_Zayed_faveicon-removebg-preview.png' %}">
+
+
+    <title>Al Zayed</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/main-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i> Info@alzayedrentals.com</li>
+            <li><i class="fa fa-map"></i> Alstom Arenco 3, UAE, Dubai</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/profile.php?id=61555658927706"><i class="fab fa-facebook"></i></a></li>
+            <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+            <li><a href="https://wa.me/+971585540051?text=Hello%2C%20how%20are%20you%3F"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/alzayedrentals?igsh=bjA1Z2U4NXg5Mjhy"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="{% url 'home' %}" class="logo">
+                      <img src="{% static 'images/Al_Zayed_logo.png' %}" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="/">Home</a></li>
+                      <li><a href="{% url 'about' %}">About</a></li>
+                      <li><a href="{% url 'equipment' %}">Equipment</a></li>
+                      <li><a href="{% url 'service' %}">Services</a></li>
+                      <li><a href="{% url 'contactus' %}" class="active">Contact Us</a></li>
+                      <!-- <li><a href="#"></i> Schedule a visit</a></li> -->
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text contact-page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="breadcrumb"><a href="#">Home</a>  /  Contact Us</span>
+          <h3>Contact Us</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-page section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6><span class="text-warning">|</span> Contact Us</h6>
+            <h2>Get In Touch With Us</h2>
+          </div>
+          <p>Welcome to <span class="text-warning">Al Zayed</span>, your trusted partner in construction equipment rental. We are here to assist you in every step of your project. Contact us through the following channels for inquiries, support, or to discuss your specific equipment needs.</p>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="item phone">
+                <img src="{% static 'images/phone-ringing (1).png' %}" alt="" style="max-width: 52px;">
+                <h6>+971 58 554 0051 <br><br>+971 55 580 1525</h6>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="item email">
+                <img src="{% static 'images/envelope-back.png' %}" alt="" style="max-width: 52px;">
+                <h6>Info@alzayedrentals.com<br><span>Business Email</span></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2f6115aa-b240-4542-bd04-c7969a363a28">
+            
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="name">Full Name</label>
+                  <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="email">Email Address</label>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="subject">Subject</label>
+                  <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" >
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-12">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3615.927181980905!2d55.1651115753755!3d25.00259017783667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDAwJzA5LjMiTiA1NcKwMTAnMDMuNyJF!5e0!3m2!1sen!2sin!4v1707370943115!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- New Footer -->
+      <!-- New Footer -->
+      <!-- Footer Start -->
+        <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-contact">
+                          <h2>Get In Touch</h2>
+                          <p class="text-white"><i class="fa fa-map-marker-alt"></i>
+                            Alstom Arenco 3, Bulding number 3, Office number 614,<br>
+                            <span class="mt-2">                            
+                              Dubai Investment Park
+                              Dubai, UAE
+                            </span>
+                          </p>
+                          <p class="text-white"><i class="fa fa-phone-alt"></i>+971 55 580 1525,<br>&nbsp; &nbsp; &nbsp; +971 58 554 0051</p>
+                          <p class="text-white"><i class="fa fa-envelope"></i>Info@alzayedrentals.com</p>
+                          <div class="footer-social">
+                              <a class="btn" href="https://www.facebook.com/profile.php?id=61555658927706"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn" href="https://www.instagram.com/alzayedrentals?igsh=bjA1Z2U4NXg5Mjhy"><i class="fab fa-instagram"></i></a>
+                              <a class="btn" href="https://wa.me/+971585540051?text=Hello%2C%20how%20are%20you%3F"><i class="fab fa-whatsapp"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-link">
+                          <h2>Popular Links</h2>
+                          <a href="/">Home</a>
+                          <a href="{% url 'about' %}">About Us</a>
+                          <a href="{% url 'equipment' %}">Equipments</a>
+                          <a href="{% url 'service' %}">Our Services</a>
+                          <a href="{% url 'contactus' %}">Contact Us</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-link">
+                          <h2>Services</h2>
+                          <a href="{% url 'equipment' %}">Rental Equipments</a>
+                          <a href="{% url 'equipment' %}">Welding & Cutting Equipment</a>
+                          <a href="{% url 'equipment' %}">Heavy Deuty Mechinaries</a>
+                          <a href="{% url 'equipment' %}">Logistic Operation</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="footer-newsletter">
+                          <h2>Connect Us</h2>
+                          <form>
+                              <input class="form-control" placeholder="Full Name">
+                              <input class="form-control" placeholder="Email">
+                              <button class="btn btn-custom">Submit</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="container copyright">
+            <p>&copy; 2024 <a href="#"> Al Zayed</a> All Right Reserved. Designed By <span>Rhizome Solutech</span></p>
+          </div>
+      </div>
+      <!-- Footer End -->
+  <!-- New Footer End-->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/counter.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+  </body>
+</html>
